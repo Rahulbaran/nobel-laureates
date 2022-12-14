@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "rules": {
+    "declaration-colon-space-after": "always",
+    "no-extra-semicolons": true,
+    "block-no-empty": true
+  },
+  "ignoreFiles": ["dist/**/*.css", "node_modules/**/*.css"]
+}
