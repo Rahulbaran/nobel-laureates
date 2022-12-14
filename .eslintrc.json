@@ -17,6 +17,7 @@
     }
   },
   "rules": {
+    "prettier/prettier": 0,
     "no-shadow": 0,
     "callback-return": 0,
     "func-names": 0,
