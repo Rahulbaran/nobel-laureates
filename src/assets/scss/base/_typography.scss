@@ -1,0 +1,31 @@
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--fs-vela-sans);
+  font-weight: var(--fw-black);
+  color: var(--heading);
+
+  &:not(h5, h6) {
+    line-height: calc(var(--base-lh) / 1.5);
+  }
+}
+
+:where(p, span, label, a) {
+  font-size: calc(var(--base-fs) * 1.1);
+
+  &:not(a) {
+    color: var(--text);
+  }
+}
+
+span,
+a {
+  display: inline-block;
+}
+
+a,
+a:link {
+  color: var(--link);
+}
+
+img {
+  display: block;
+}

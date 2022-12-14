@@ -1,0 +1,38 @@
+@use "../abstracts/breakpoints" as a;
+
+html {
+  font-size: 75%;
+  box-sizing: border-box;
+  min-block-size: 100vh;
+
+  @include a.breakpoint(medium) {
+    font-size: 87.5%;
+  }
+  @include a.breakpoint(large) {
+    font-size: 100%;
+  }
+  @include a.breakpoint(xlarge) {
+    font-size: 112.5%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-block-size: 100vh;
+  font: var(--fw-normal) var(--base-fs) / var(--base-lh);
+  font-family: var(--fs-hubot-sans);
+  background-color: var(--body-bg);
+  background-image: var(--body-bg-img);
+  background-attachment: fixed;
+}
