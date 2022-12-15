@@ -31,8 +31,12 @@ html {
 body {
   min-block-size: 100vh;
   font: var(--fw-normal) var(--base-fs) / var(--base-lh);
-  font-family: var(--fs-hubot-sans);
+  font-family: var(--fs-vela-sans);
   background-color: var(--body-bg);
   background-image: var(--body-bg-img);
   background-attachment: fixed;
+}
+
+#root {
+  min-block-size: 100vh;
 }

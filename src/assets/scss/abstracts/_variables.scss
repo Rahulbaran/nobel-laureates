@@ -21,6 +21,25 @@
     oklch(50% 0.3 30),
     oklch(75% 0.25 40)
   );
+  --heading-bg-img: linear-gradient(
+    to right,
+    oklch(30% 0.37 25),
+    oklch(60% 0.3 60)
+  );
+  --about-container-bg: oklch(90% 0.05 50 / 0.75);
+  --about-container-bg-img: linear-gradient(
+    to bottom right,
+    oklch(90% 0.05 50 / 0.5),
+    oklch(70% 0.1 30 / 0.25)
+  );
+  --primary-btn-bg: oklch(50% 0.3 60);
+  --primary-btn-bg-img: linear-gradient(
+    to bottom right,
+    oklch(50% 0.37 25),
+    oklch(65% 0.35 50)
+  );
   --heading: oklch(40% 0.37 30);
-  --text: oklch(50% 0.2 30);
+  --text: oklch(50% 0.18 30);
+  --primary-btn-text: oklch(80% 0.1 50);
+  --shadow: 0% 0.005 10;
 }

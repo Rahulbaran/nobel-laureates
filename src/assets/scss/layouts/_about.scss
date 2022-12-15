@@ -1,0 +1,18 @@
+.about-container {
+  background-color: var(--about-container-bg);
+  background-image: var(--about-container-bg-img);
+  display: grid;
+  place-items: center;
+
+  h1 {
+    font-size: calc(var(--base-fs) * 2.75);
+    background-image: var(--heading-bg-img);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    margin-block-start: calc(var(--base-margin) * 2);
+    font-weight: var(--fw-medium);
+  }
+}

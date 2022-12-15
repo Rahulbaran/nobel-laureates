@@ -1,7 +1,9 @@
+import About from "./components/About";
+
 function App() {
   return (
     <>
-      <h1>Rahul Baranwal</h1>
+      <About />
     </>
   );
 }

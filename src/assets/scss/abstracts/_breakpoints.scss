@@ -11,7 +11,7 @@ $bps: (
 }
 
 @mixin breakpoint-down($size) {
-  @media screen and (min-width: map-get($bps, $size)) {
+  @media screen and (max-width: map-get($bps, $size)) {
     @content;
   }
 }
