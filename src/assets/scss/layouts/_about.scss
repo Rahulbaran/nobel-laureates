@@ -6,9 +6,6 @@
 
   h1 {
     font-size: calc(var(--base-fs) * 2.75);
-    background-image: var(--heading-bg-img);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   p {
