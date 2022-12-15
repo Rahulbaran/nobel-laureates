@@ -4,6 +4,8 @@ html {
   font-size: 75%;
   box-sizing: border-box;
   min-block-size: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-track-bg);
 
   @include a.breakpoint(medium) {
     font-size: 87.5%;
@@ -35,6 +37,22 @@ body {
   background-color: var(--body-bg);
   background-image: var(--body-bg-img);
   background-attachment: fixed;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  block-size: 9px;
+  inline-size: 9px;
+
+  &-track {
+    background-color: var(--scrollbar-track-bg);
+    box-shadow: 3px 0 5px oklch(var(--shadow) / 0.25) inset;
+  }
+
+  &-thumb {
+    border-radius: calc(var(--base-br) * 0.1);
+    background-color: var(--scrollbar-thumb-bg);
+  }
 }
 
 #root {

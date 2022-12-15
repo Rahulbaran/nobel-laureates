@@ -1,0 +1,52 @@
+.nobel-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 4fr;
+  justify-items: center;
+  gap: calc(var(--base-gap) * 7);
+  padding-block: calc(var(--base-padding) * 5);
+
+  h2 {
+    text-decoration: underline 0.15em solid var(--text);
+    text-underline-offset: 0.1em;
+    font-size: calc(var(--base-fs) * 1.75);
+  }
+}
+
+.form {
+  input {
+    width: 100%;
+    margin-block-start: calc(var(--base-margin) * 2.5);
+    font-family: inherit;
+    font-size: calc(var(--base-fs) * 1.15);
+    padding: var(--base-padding) calc(var(--base-padding) * 1.25);
+    color: var(--text);
+    border-radius: calc(var(--base-br) * 0.2);
+    border: 1px solid var(--border-color);
+    font-weight: var(--fw-medium);
+
+    &:focus {
+      outline-color: var(--text-color);
+    }
+  }
+}
+
+.nobel__info-wrapper {
+  inline-size: min(760px, 90vw);
+
+  h2 {
+    margin-block-end: calc(var(--base-margin) * 2);
+  }
+
+  & > div:not(:first-of-type) {
+    margin-block-start: calc(var(--base-margin) * 2);
+  }
+
+  h3 {
+    font-size: calc(var(--base-fs) * 1.35);
+  }
+
+  p {
+    text-indent: var(--base-gap);
+  }
+}

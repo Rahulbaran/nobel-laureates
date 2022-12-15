@@ -1,3 +1,7 @@
 .card {
-  padding: calc(var(--base-padding) * 2);
+  padding: calc(var(--base-padding) * 3);
+  background-color: var(--card-bg);
+  border-radius: calc(var(--base-br) * 0.5);
+  box-shadow: 0 0 15px oklch(var(--shadow) / 0.5);
+  inline-size: min(480px, 80% + 10vw);
 }
