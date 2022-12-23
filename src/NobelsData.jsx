@@ -1,5 +1,5 @@
 export const awardYears = [2022, 2021, 2020, 2019, 2018];
-export const awards = [
+export const awardsData = [
   {
     year: 2022,
     awards: [
@@ -19,7 +19,11 @@ export const awards = [
         category: "Peace",
         prizeAmount: 10000000,
         dateAwarded: "2022-10-07",
-        laureates: ["Ales Bialiatski"],
+        laureates: [
+          "Ales Bialiatski",
+          "Memorial",
+          "Center for Civil Liberties"
+        ],
         orgNames: ["Memorial", "Center for Civil Liberties"]
       },
       {
@@ -103,7 +107,7 @@ export const awards = [
         category: "Peace",
         prizeAmount: 10000000,
         dateAwarded: "2020-10-09",
-        laureates: [],
+        laureates: ["World Food Programme"],
         orgNames: ["World Food Programme"]
       },
       {
