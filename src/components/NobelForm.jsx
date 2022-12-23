@@ -10,6 +10,7 @@ const NobelForm = ({ awardYear, handleChange }) => {
           placeholder="enter year"
           value={awardYear}
           onChange={e => handleChange(e.target.valueAsNumber)}
+          title="year must be in between 2018 & 2022"
         />
       </form>
     </div>
