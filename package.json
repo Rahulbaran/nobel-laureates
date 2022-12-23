@@ -7,7 +7,14 @@
     "email": "rahulkumar109422@gmail.com"
   },
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "nobel-laureates",
+    "nobel winners",
+    "react nobel winners app",
+    "nobel award winners",
+    "react app",
+    "nobel winners app"
+  ],
   "description": "",
   "scripts": {
     "start": "vite serve",
