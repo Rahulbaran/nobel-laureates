@@ -12,4 +12,9 @@
     margin-block-start: calc(var(--base-margin) * 2);
     font-weight: var(--fw-medium);
   }
+
+  a {
+    text-transform: uppercase;
+    word-spacing: 4px;
+  }
 }

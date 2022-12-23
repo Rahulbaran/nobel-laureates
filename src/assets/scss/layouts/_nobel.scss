@@ -7,7 +7,7 @@
   padding-block: calc(var(--base-padding) * 5);
 
   h2 {
-    text-decoration: underline 0.15em solid var(--text);
+    text-decoration: underline 0.125em solid var(--text);
     text-underline-offset: 0.1em;
     font-size: calc(var(--base-fs) * 1.75);
   }
@@ -26,7 +26,7 @@
     font-weight: var(--fw-medium);
 
     &:focus {
-      outline-color: var(--text-color);
+      outline-color: currentcolor;
     }
   }
 }
