@@ -1,8 +1,12 @@
 import { useState } from "react";
-import About from "./components/About";
-import NobelForm from "./components/NobelForm";
-import NobelInfo from "./components/NobelInfo";
-import { awardsData, awardYears } from "./NobelsData";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+/* pages */
+import Home from "./pages/Home";
+import NotFound from "./pages/404";
+
+/* data */
+import { awardsData, awardYears } from "./data/NobelsData";
 
 function App() {
   const [awardYear, setAwardYear] = useState(awardYears[0]);
@@ -21,13 +25,33 @@ function App() {
   };
 
   return (
-    <>
-      <About />
-      <section className="container nobel-container" id="nobel-wrapper">
-        <NobelForm awardYear={awardYear} handleChange={handleChange} />
-        <NobelInfo awardData={awardData} />
-      </section>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              awardYear={awardYear}
+              awardData={awardData}
+              handleChange={handleChange}
+            />
+          }
+        >
+          <Route
+            path="home"
+            element={
+              <Home
+                awardYear={awardYear}
+                awardData={awardData}
+                handleChange={handleChange}
+              />
+            }
+          />
+        </Route>
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
