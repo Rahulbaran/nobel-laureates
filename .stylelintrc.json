@@ -7,7 +7,10 @@
     "declaration-colon-space-after": "always",
     "no-extra-semicolons": true,
     "block-no-empty": true,
-    "selector-class-pattern": null
+    "selector-class-pattern": null,
+    "hue-degree-notation": null,
+    "color-no-hex": true,
+    "color-named": "never"
   },
   "ignoreFiles": ["dist/**/*.css", "node_modules/**/*.css"]
 }
