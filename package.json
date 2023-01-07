@@ -15,7 +15,7 @@
     "react app",
     "nobel winners app"
   ],
-  "description": "",
+  "description": "nobel-laureates is a react app to get a yearwise list of nobel award winners",
   "scripts": {
     "start": "vite serve",
     "build": "vite build",
@@ -54,7 +54,8 @@
   "homepage": "https://github.com/Rahulbaran/nobel-laureates#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
